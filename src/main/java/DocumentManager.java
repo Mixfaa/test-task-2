@@ -37,7 +37,6 @@ public class DocumentManager {
         if (document.id == null)
             document.id = IdGenerator.makeId();
 
-
         store.add(document);
 
         return document;
@@ -91,7 +90,6 @@ public class DocumentManager {
 
     @Data
     @Builder
-    @With
     public static class Document {
         private String id;
         private String title;
